@@ -18,15 +18,22 @@ describe('Diamond', function() {
   });
 
   it('test letter E', function() {
-    result = ["    A    ",
-              "   B B   ",
-              "  C   C  ",
-              " D     D ",
-              "E       E",
-              " D     D ",
-              "  C   C  ",
-              "   B B   ",
-              "    A    "].join("\n") + "\n";
+    result = ["....A....",
+              "...B.B...",
+              "..C...C..",
+              ".D.....D.",
+              "E.......E",
+              ".D.....D.",
+              "..C...C..",
+              "...B.B...",
+              "....A...."].join("\n") + "\n";
     expect(diamond.makeDiamond('E')).toEqual(result);
   });
 });
+
+
+// 1- Represent the data with a nested array
+// 2- the index of the letter will be the index of the array
+// in the nessted array and the index of letter will be 0 and last
+// in that same array
+// 3-
